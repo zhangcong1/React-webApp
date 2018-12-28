@@ -1,0 +1,134 @@
+.category-box{
+  width: 100vw;
+  height: calc( 100vh - 1.2rem );
+  display: flex;
+  overflow: hidden;
+  .left{
+    width: 1.5rem;
+    height: 100%;
+    border-right:.01rem solid #D8D8D8;
+    overflow: auto;
+    float: left;
+    li{
+      width: 100%;
+      height: .9rem;
+      padding: 0.2rem 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:.28rem;
+      border-left: .06rem solid #fff;
+    }
+    .selected{
+      border-left-color: #AB956D;
+      color: #AB956D;
+    }
+  }
+  .right{
+    float: left;
+    width: calc( 100% - 1.5rem );
+    height: 100%;
+    transition:all 500ms ease-in-out;
+    //overflow: hidden;
+  }
+  .category-head{
+    width: 100%;
+    height: 2rem;
+    background-size: cover!important;
+  }
+  .category-title{
+    margin: .3rem;
+    font-size: .24rem;
+    text-align: center;
+    color: #AB956D;
+    position: relative;
+    span::after{
+      display: block;
+      content: '';
+      width: .6rem;
+      height: .01rem;
+      background: #999999;
+      position: absolute;
+      left: 60%;
+      top: 50%;
+    }
+    span::before{
+      display: block;
+      content: '';
+      width: .6rem;
+      height: .01rem;
+      background: #999999;
+      position: absolute;
+      left: 28%;
+      top: 50%;
+    }
+  }
+  .category-main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    li{
+      width: 30%;
+      float: left;
+      margin-bottom: .2rem;
+      text-align: center;
+      .img-box{
+        width: 1.2rem;
+        height: 1.2rem;
+        margin: 0 auto;
+        border-radius: 50%;
+        background-size: cover!important;
+      }
+      h5{
+        padding: .2rem 0;
+        color: #444452;
+        font-size: .24rem;
+      }
+    }
+    .middle{
+      margin: 0 .2rem;
+    }
+  }
+
+}
+.transition{
+  width: 100%;
+  height: 100vh;
+}
+.transition0{
+  width: 100%;
+  height: 100vh;
+  transform: translate(0,0);
+  padding: .2rem;
+}
+.transition1{
+  width: 100%;
+  height: 100vh;
+  transform: translate(0,-100vh);
+  padding: .2rem;
+}
+.transition2{
+  width: 100%;
+  height: 100vh;
+  transform: translate(0,-200vh);
+  padding: .2rem;
+}
+.transition3{
+  width: 100%;
+  height: 100vh;
+  transform: translate(0,-300vh);
+  padding: .2rem;
+}
+.transition4{
+  width: 100%;
+  height: 100vh;
+  transform: translate(0,-400vh);
+  padding: .2rem;
+}
+.transition5{
+  width: 100%;
+  height: 100vh;
+  transform: translate(0,-500vh);
+  padding: .2rem;
+}

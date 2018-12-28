@@ -1,0 +1,132 @@
+.noData{
+  display:flex;
+  height:1.40rem;
+  font-size:.26rem;
+  color:#ccc;
+  align-items:center;
+  justify-content:center;
+}
+.cart-container{
+  font-size: .28rem;
+  .cart-list{
+    width: 100%;
+    li{
+      width: 100%;
+      height: 2.3rem;
+      display:flex;
+      padding:.20rem;
+      padding-left:0;
+      background-color:#fff;
+      border-bottom: .02rem solid #D0D0D7;
+    }
+  }
+  .cart-item-checkbox{
+    width:.84rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    img{
+      width: .44rem;
+      height: .44rem;
+    }
+  }
+  .cart-item-img{
+    width:1.86rem;
+    height:100%;
+    background-color:#F5F6F5;
+    border-radius:.1rem;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  .cart-item-word{
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    justify-content:space-between;
+    padding: .12rem 0;
+    margin:0 .2rem;
+    box-sizing:border-box;
+    color:#454553;
+    .title-box{
+      display:flex;
+      justify-content:space-between;
+    }
+  }
+  .bottom-box{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height: .6rem;
+  }
+  .cart-item-counts{
+    width:2.20rem;
+    height: 100%;
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+    div{
+      height: 100%;
+      padding: 0 .2rem;
+      display: flex;
+      align-items: center;
+      &.del,&.add{
+        font-size: .42rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .delete{
+    padding: 0 .2rem;
+    font-weight: bold;
+  }
+
+}
+.footer-account-box{
+  position:fixed;
+  bottom: 1.21rem;
+  height: 1rem;
+  width:100%;
+  display:flex;
+  border-top: .02rem solid #ccc;
+  border-bottom: .02rem solid #ccc;
+  background-color:#AB956D;
+  color:#fff;
+  .all-select{
+    font-size: .28rem;
+    width:40%;
+    display: flex;
+    align-items: center;
+    img{
+      width: .48rem;
+      height: .48rem;
+      margin: 0 .2rem;
+    }
+  }
+  .all-price-submit{
+    font-size: .28rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    .accounts-btn{
+      width:50%;
+      font-size:.28rem;
+      border-right: .03rem dotted #fff;
+      text-align: center;
+    }
+    .price-text{
+      width:22%;
+      font-size:.28rem;
+      margin-left: .1rem;
+    }
+    .arrow-icon{
+      width: 28%;
+      text-align: center;
+      img{
+        width: .32rem;
+        height: .32rem;
+      }
+    }
+  }
+}

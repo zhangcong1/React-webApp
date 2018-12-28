@@ -1,0 +1,43 @@
+.tab-box{
+  width: 100%;
+  height: 1.2rem;
+  background: #F5F5F5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  li{
+    width: 25%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+  }
+  .content{
+    height: 100%;
+    text-align: center;
+    padding: .1rem 0;
+    font-size: 0;
+    img{
+      width: .6rem;
+    }
+    span{
+      display: block;
+      font-size: .24rem;
+      color: #A0A0A0;
+      padding-top: .05rem;
+    }
+    .active{
+      color: #AB956D;
+    }
+  }
+}
+.bottom{
+  width: 100%;
+  height: 1rem;
+}
+.url{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}

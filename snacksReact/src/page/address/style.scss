@@ -1,0 +1,30 @@
+.info-box{
+  .input{
+    display: block;
+    width: 100%;
+    height: 1rem;
+    border: none;
+    font-size: .3rem;
+    border-bottom: .02rem solid #dfdfdf;
+    outline: none;
+    ::placeholder{
+      color: #dfdfdf;
+    }
+  }
+}
+.save{
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  font-size: .32rem;
+  color: white;
+  background: #AB956D;
+}
+.ant-cascader-input.ant-input{
+  height: 100%;
+  border: none;
+}

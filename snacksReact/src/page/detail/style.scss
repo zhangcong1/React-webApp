@@ -1,0 +1,149 @@
+.top{
+  position: relative;
+}
+.fixed-cart{
+  width: .6rem;
+  position: absolute;
+  right: .5rem;
+  top: 0.12rem;
+  img{
+    width: 100%;
+  }
+  .fixed-cart-count{
+    font-size:.24rem;
+    background-color:#AB956D;
+    color:white;
+    position:absolute;
+    right: .48rem;
+    top: .28rem;
+    height: .36rem;
+    width: .36rem;
+    line-height: .36rem;
+    border-radius: 50%;
+    text-align:center;
+    display: none;
+  }
+}
+.top-img{
+  width: 100%;
+  height: 4.8rem;
+  background-size: contain!important;
+}
+.cart-box{
+  width:6.6rem;
+  height:1rem;
+  margin:.3rem auto;
+  border-radius: 1rem;
+  background-color:#AB956D;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  .count-box{
+    width: 50%;
+    height:100%;
+    display:flex;
+    font-size: .28rem;
+    align-items:center;
+    justify-content:center;
+    span{
+      margin: 0 .2rem;
+    }
+  }
+  .middle-border{
+    width: .01rem;
+    height: .3rem;
+    border-right: .02rem #fff dotted;
+
+  }
+  .addCart-box{
+    position: relative;
+    display:flex;
+    flex: 1;
+    height:100%;
+    font-size:.28rem;
+    align-items:center;
+    justify-content:center;
+    img{
+      width: .32rem;
+      height: .32rem;
+      margin-left: .4rem;
+    }
+  }
+}
+.base-info-box{
+  padding:.15rem 0;
+  color:#454552;
+  text-align:center;
+  .item{
+    margin: .2rem 0;
+  }
+  .stock{
+    font-size: .24rem;
+    &.no{
+      color: #B42F2D;
+    }
+  }
+  .name{
+    font-size: .4rem;
+  }
+  .price{
+    font-size: .38rem;
+  }
+}
+
+.tabs-box{
+  width: 100%;
+  height: .9rem;
+  display:flex;
+  justify-content:space-between;
+  margin-bottom: .15rem;
+  li{
+    width:33.3%;
+    color:#C7C7CB;
+    font-size: .28rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom: .01rem solid #D0D0D7;
+    &.select{
+      color:rgba(171,149,109,.8);
+      border-bottom: .04rem solid rgba(171,149,109,.8);
+    }
+  }
+}
+
+.product-detail-imgs{
+  width: 100%;
+  img{
+    width: 100%;
+    height: 4rem;
+    float: left;
+  }
+}
+.product-detail-properties{
+  min-height: 80vh;
+  .properties-item{
+    display:flex;
+    margin: .25rem 0;
+    font-size: .24rem;
+  }
+  .properties-name{
+    width:1.6rem;
+    color:#808080;
+    text-align:center;
+  }
+  .properties-detail{
+    flex:1;
+    color:#333;
+    padding-right: .40rem;
+  }
+}
+.product-detail-protect{
+  min-height: 80vh;
+  div{
+    font-size:.24rem;
+    color: #808080;
+    text-align:center;
+    margin-top:.30rem;
+  }
+}
