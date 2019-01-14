@@ -1,4 +1,5 @@
 import * as constants from './constants';
+import * as constantsURL from '../../../store/constants';
 
 export const changeData = () => ({
     type: constants.CHANGE_DATA
@@ -6,7 +7,7 @@ export const changeData = () => ({
 
 export const getBanner = (callback) => {
     return (dispach) => {
-        fetch(constants.PRE_URL+'/api/v1/banner/1').then((e)=>{
+        fetch(constantsURL.PRE_URL+'/api/v1/banner/1').then((e)=>{
             return e.json();
         }).then((e)=>{
             let result = e.item;
@@ -22,7 +23,7 @@ const getBannerData = (result) => ({
 
 export const getTheme = () => {
     return (dispach) => {
-        fetch(constants.PRE_URL+'/api/v1/theme?ids=1,2,3').then((e)=>{
+        fetch(constantsURL.PRE_URL+'/api/v1/theme?ids=1,2,3').then((e)=>{
             return e.json();
         }).then((e)=>{
             dispach(getThemeData(e));
@@ -36,7 +37,7 @@ const getThemeData = (result) => ({
 
 export const getProduct = () => {
     return (dispach) => {
-        fetch(constants.PRE_URL+'/api/v1/product/recent').then((e)=>{
+        fetch(constantsURL.PRE_URL+'/api/v1/product/recent').then((e)=>{
             return e.json();
         }).then((e)=>{
             dispach(getProductData(e));

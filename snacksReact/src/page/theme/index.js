@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import './style.scss';
 import Products from '../home/components/Products';
+import * as constantsURL from '../../store/constants';
 
 class Theme extends Component{
     constructor(props){
@@ -14,7 +15,7 @@ class Theme extends Component{
     }
     componentWillMount() {
         let id = this.props.match.params.id;
-        fetch('/ajax/app/public/api/v1/theme/'+id).then((e)=>{
+        fetch(constantsURL.PRE_URL+'/api/v1/theme/'+id).then((e)=>{
             return e.json();
         }).then((e)=>{
             this.setState({

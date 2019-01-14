@@ -13,6 +13,7 @@ class My extends Component{
         this.loginout = this.loginout.bind(this);
         this.addAddress = this.addAddress.bind(this);
         this.goPay = this.goPay.bind(this);
+        this.clearCookie = this.clearCookie.bind(this);
     }
     loginout(){
         sessionStorage.removeItem('userLoginToken');
@@ -47,6 +48,11 @@ class My extends Component{
         this.props.history.push('/pay/'+id);
     }
 
+    clearCookie(){
+        localStorage.removeItem('address');
+        localStorage.removeItem('pay');
+    }
+
     render() {
         let { address,myorder } = this.state;
         return (
@@ -54,7 +60,7 @@ class My extends Component{
                 <div className="header">
                     <Icon type="setting" style={{opacity:'0'}}/>
                     <span>零食商贩</span>
-                    <Icon type="setting" />
+                    <Icon type="setting" onClick={()=>this.clearCookie()}/>
                 </div>
                 <div className='info'>
                     <div className='headImg' />

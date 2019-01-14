@@ -1,4 +1,5 @@
 import React,{ Component } from 'react';
+import * as constantsURL from '../../store/constants';
 import './style.scss';
 import {
     Form, Icon, Input, Button, message
@@ -16,7 +17,7 @@ class NormalLoginForm extends Component {
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values);
-                fetch('/ajax/app/public/api/v1/userlogin',{
+                fetch(constantsURL.PRE_URL+'/api/v1/userlogin',{
                     method:'POST',
                     headers: {
                         'Accept': 'application/json',

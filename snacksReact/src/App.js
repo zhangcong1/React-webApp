@@ -5,7 +5,7 @@ import Home from './page/home';
 import Category from './page/category';
 import Cart from './page/cart';
 import Login from './page/login';
-import { BrowserRouter,Route } from 'react-router-dom';
+import { Route,HashRouter } from 'react-router-dom';
 import My from "./page/my";
 import Detail from "./page/detail";
 import Theme from "./page/theme";
@@ -18,7 +18,7 @@ class App extends Component{
         return (
             <Provider store={store}>
                 <Fragment>
-                    <BrowserRouter>
+                    <HashRouter>
                         <div style={{background: 'white'}}>
                             <Route path='/' exact component={Home} />
                             <Route path='/category' exact component={Category} />
@@ -31,7 +31,7 @@ class App extends Component{
                             <Route path='/address' exact component={Address} />
                             <Route path='/pay/:id' exact component={Pay} />
                         </div>
-                    </BrowserRouter>
+                    </HashRouter>
                 </Fragment>
             </Provider>
         )
